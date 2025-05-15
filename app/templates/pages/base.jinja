@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="utf8">
+    <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.pumpkin.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.pumpkin.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
     <header>
@@ -13,9 +14,9 @@
                 <li>Flask Demo</li>
             </ul>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/random/">Random</a></li>
+                <li><a role="button" href="/">Home</a></li>
+                <li><a role="button" href="/about/">About</a></li>
+                <li><a role="button" href="/random/">Random</a></li>
             </ul>
         </nav>
     </header>

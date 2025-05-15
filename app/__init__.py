@@ -15,4 +15,10 @@ def about():
 
 @app.get("/random/")
 def random():
-    return str(randint(1,100))
+    randNum = str(randint(1,100))
+    return render_template('pages/random.jinja', number = randNum)
+
+@app.route('/run_function', methods=['GET'])
+def run_function():
+    # Your Python function logic here
+    print("Python function executed!")
