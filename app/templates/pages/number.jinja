@@ -2,14 +2,17 @@
 
 
 {% block title %}
-    Flask Demo - Given Number
+    Flask Demo - Form Data
 {% endblock %}
 
 {% block content%}
-    <h2>Your Given Number:</h2>
+    <h2>You entered the data:</h2>
 
-    <article id="random">
-        <p><b>{{ number }}</b></p>
+    <article>
+        <h3>Name:</h3>
+        <p><b>{{ name }}</b></p>
+        <h3>Age:</h3>
+        <p><b>{{ age }}</b></p>
     </article>
     
 {% endblock %}
